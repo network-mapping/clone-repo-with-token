@@ -17,10 +17,10 @@ The script is silent and intended to be used in an AWS automation runbook.
     source ./clone.sh <client_id> <installation_id> <pem> <org> <repo> <ref> <path>
 
 ### Parameters
-$1 = client_id: GitHub client id.
-$2 = installation_id: GitHub installation id.
-$3 = pem: GitHub private key.
-$4 = org: GitHub organisation
-$5 = repo: GitHub repo.
-$6 = ref: Tepository branch/tag.
-$7 = path: Path to clone into.
+ - $1 = client_id: GitHub client id.
+ - $2 = installation_id: GitHub installation id.
+ - $3 = pem: GitHub private key.
+ - $4 = org: GitHub organisation
+ - $5 = repo: GitHub repo.
+ - $6 = ref: Tepository branch/tag.
+ - $7 = path: Path to clone into.
