@@ -10,7 +10,7 @@ The script is silent and intended to be used in an AWS automation runbook.
 
 ## Usage
 
-    url='https://raw.githubusercontent.com/<org>/clone-repo-with-token/refs/heads/main/clone.sh'
+    url='https://raw.githubusercontent.com/network-mapping/clone-repo-with-token/refs/heads/main/clone.sh'
     curl -sSL -o ./clone.sh "${url}"
     chmod -R +x "./clone.sh"
     
