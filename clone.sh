@@ -54,12 +54,5 @@ response=$( curl -sS --request POST \
 token="$(echo "${response}" | jq -r '.token')"
 
 # clone the repo
-set_token "${client_id}" \
-    "${installation_id}" \
-    "${pem}" \
-    "${org}" \
-    "${repo}" \
-    "${ref}" \
-    "${path}"
 url="https://x-access-token:${token}@github.com/${org}/${repo}.git"
 git clone --depth 1 --branch ${ref} "${url}" "${path}" &> /dev/null
